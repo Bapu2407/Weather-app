@@ -9,7 +9,7 @@ const app = express();
 const publicDirectoryPath = path.join(__dirname,'../public');
 const viewsPath = path.join(__dirname,'../templates/Views');
 const partialsPath = path.join(__dirname,'../templates/Partials');
-const port = Process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 app.set('view engine','hbs');
 app.set('views',viewsPath);
